@@ -95,37 +95,23 @@ Boiler inputStructBoiler(Boiler boilering)
     return boilering;
 }
 
-struct Plate
-{
-    char firstPart[3];
-    int secondPart;
-    char thirdPart[3];
-};
-
-struct Car
-{
-    char color[20];
-    char model[20];
-    Plate carPlate;
-};
-
 int main()
 {
     Washing machine = { "Company", "White", 35,135,20,10,55 };
     showStruct(machine);
 
-    /*Washing newMachine = {};
+    Washing newMachine = {};
     newMachine = inputStruct(newMachine);
-    showStruct(newMachine);*/
+    showStruct(newMachine);
 
     cout << "==========================================" << endl;
 
     Iron iron{ "Corporation","Gray",10,50,true,20 };
     showStructIron(iron);
 
-   /* Iron newIron = {};
+    Iron newIron = {};
     newIron = inputStructIron(newIron);
-    showStructIron(iron);*/
+    showStructIron(iron);
 
     cout << "==========================================" << endl;
 
